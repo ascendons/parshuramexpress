@@ -73,7 +73,7 @@ export default function Contact() {
                 <div>
                   <h4>Primary Address</h4>
                   <p>
-                    C/O Santu Datta, Karamtoli,<br />
+                    Karamtoli, Opposite Hanuman Mandir,<br />
                     Daladali Chowk, Simlia, Ratu,<br />
                     Ranchi - 835222, Jharkhand, India
                   </p>
@@ -90,7 +90,8 @@ export default function Contact() {
                   <h4>Call Logistics Helpdesk</h4>
                   <p>
                     <a href="tel:+919900070560">+91 99000 70560</a><br />
-                    <a href="tel:+919900070561">+91 99000 70561</a>
+                    <a href="tel:+919900070561">+91 99000 70561</a><br />
+                    <a href="tel:+917050044409">+91 70500 44409</a>
                   </p>
                 </div>
               </div>

@@ -1,15 +1,11 @@
 import type { NextConfig } from "next";
 
-const repoName = "parshuramexpress";
-const isGithubActions = process.env.GITHUB_ACTIONS === "true";
-
+// Served from the www.parshuramexpress.com custom domain root, so no basePath/assetPrefix.
 const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
   },
-  basePath: isGithubActions ? `/${repoName}` : "",
-  assetPrefix: isGithubActions ? `/${repoName}/` : "",
 };
 
 export default nextConfig;

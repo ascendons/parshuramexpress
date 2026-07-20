@@ -310,7 +310,7 @@ export default function Home() {
                 <Link href="/contact" className="btn btn-primary">
                   Inquire Now
                 </Link>
-                <a href="tel:+919900070560" className="btn btn-secondary" style={{ border: "2px solid #555", color: "white" }}>
+                <a href="tel:+917050044409" className="btn btn-secondary" style={{ border: "2px solid #555", color: "white" }}>
                   Call Support
                 </a>
               </div>
@@ -326,7 +326,7 @@ export default function Home() {
 
       {/* Floatable WhatsApp Support Widget */}
       <a
-        href="https://wa.me/919900070560?text=Hi%20Parshuram%20Express,%20I'd%20like%20to%20inquire%20about%20your%20logistics%20services."
+        href="https://wa.me/917050044409?text=Hi%20Parshuram%20Express,%20I'd%20like%20to%20inquire%20about%20your%20logistics%20services."
         className="whatsapp-widget"
         target="_blank"
         rel="noopener noreferrer"

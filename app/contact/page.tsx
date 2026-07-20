@@ -89,8 +89,6 @@ export default function Contact() {
                 <div>
                   <h4>Call Logistics Helpdesk</h4>
                   <p>
-                    <a href="tel:+919900070560">+91 99000 70560</a><br />
-                    <a href="tel:+919900070561">+91 99000 70561</a><br />
                     <a href="tel:+917050044409">+91 70500 44409</a>
                   </p>
                 </div>
@@ -141,7 +139,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="form-input"
-                    placeholder="99000 70560"
+                    placeholder="70500 44409"
                     required
                   />
                 </div>

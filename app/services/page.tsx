@@ -1,3 +1,5 @@
+import Reveal from "../../components/motion/Reveal";
+
 export default function Services() {
   const serviceList = [
     {
@@ -68,7 +70,7 @@ export default function Services() {
       <section className="section">
         <div className="container detailed-services-list">
           {serviceList.map((service, index) => (
-            <div key={index} id={service.id} className="detailed-service-item">
+            <Reveal key={index} id={service.id} className="detailed-service-item">
               <div
                 className="detailed-service-img"
                 style={{ backgroundImage: `url(${service.image})` }}
@@ -91,7 +93,7 @@ export default function Services() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>

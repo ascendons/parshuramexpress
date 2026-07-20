@@ -1,3 +1,5 @@
+import Reveal from "../../components/motion/Reveal";
+
 export default function Gallery() {
   const galleryItems = [
     {
@@ -65,7 +67,7 @@ export default function Gallery() {
         <div className="container">
           <div className="gallery-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
             {galleryItems.map((item, index) => (
-              <div key={index} className="gallery-item" style={{ height: "300px" }}>
+              <Reveal key={index} delay={(index % 3) * 0.1} className="gallery-item" style={{ height: "300px" }}>
                 <div
                   className="gallery-image-bg"
                   style={{ backgroundImage: `url(${item.image})` }}
@@ -92,7 +94,7 @@ export default function Gallery() {
                     </h3>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

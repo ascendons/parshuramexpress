@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Reveal from "../../components/motion/Reveal";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -52,7 +53,7 @@ export default function Contact() {
       <section className="section">
         <div className="container contact-split">
           {/* Info Side */}
-          <div className="contact-info-side">
+          <Reveal className="contact-info-side">
             <span className="section-subtitle">Support Center</span>
             <h2 style={{ fontSize: "28px", marginBottom: "24px", fontWeight: "800" }}>
               Corporate Office &amp; Inquiries
@@ -110,10 +111,10 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* Form Side */}
-          <div className="contact-form-wrapper">
+          <Reveal className="contact-form-wrapper" delay={0.15}>
             <h3 className="form-title">Send a Quick Inquiry</h3>
             <form onSubmit={handleSubmit}>
               <div className="form-grid">
@@ -217,7 +218,7 @@ export default function Contact() {
                 </div>
               )}
             </form>
-          </div>
+          </Reveal>
         </div>
       </section>
     </div>

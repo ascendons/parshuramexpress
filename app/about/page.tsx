@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logoFull from "../../assets/logo-full.png";
+import Reveal from "../../components/motion/Reveal";
 
 export default function About() {
   const values = [
@@ -34,7 +35,7 @@ export default function About() {
       {/* Main Info Section */}
       <section className="section">
         <div className="container about-split">
-          <div className="about-content">
+          <Reveal className="about-content">
             <span className="section-subtitle">Establishment</span>
             <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "800" }}>
               Leading the Transport Sector with Excellence
@@ -62,9 +63,9 @@ export default function About() {
                 Strong Financial Backing by Canara Bank
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="about-graphic-wrapper">
+          <Reveal className="about-graphic-wrapper" delay={0.15}>
             <div className="about-graphic-text">
               <Image
                 src={logoFull}
@@ -73,24 +74,25 @@ export default function About() {
               />
               <p>India&apos;s Trusted Transporter</p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Values Section */}
       <section className="section" style={{ backgroundColor: "#f1f5f9" }}>
         <div className="container">
-          <div className="section-header">
+          <Reveal className="section-header">
             <span className="section-subtitle">Our Foundations</span>
             <h2 className="section-title">Core Corporate Values</h2>
             <p className="section-desc">
               These principles guide every shipment, fleet deployment, and client service dispatch.
             </p>
-          </div>
+          </Reveal>
           <div className="services-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
             {values.map((value, idx) => (
-              <div
+              <Reveal
                 key={idx}
+                delay={idx * 0.1}
                 className="highlight-box"
                 style={{
                   flexDirection: "column",
@@ -113,7 +115,7 @@ export default function About() {
                 </div>
                 <h3 style={{ fontSize: "20px", marginBottom: "12px" }}>{value.title}</h3>
                 <p style={{ fontSize: "14px", color: "var(--color-text-muted)" }}>{value.description}</p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -121,7 +123,7 @@ export default function About() {
 
       {/* FAQ & CTA Section */}
       <section className="section" style={{ paddingBottom: "120px" }}>
-        <div className="container" style={{ textAlign: "center", maxWidth: "800px" }}>
+        <Reveal className="container" style={{ textAlign: "center", maxWidth: "800px" }}>
           <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "800" }}>
             Partner with a Leader in Logistics
           </h2>
@@ -136,7 +138,7 @@ export default function About() {
               Explore Our Services
             </Link>
           </div>
-        </div>
+        </Reveal>
       </section>
     </div>
   );

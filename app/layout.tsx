@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Outfit, Inter } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import SmoothScroll from "../components/motion/SmoothScroll";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
       <body className="antialiased">
+        <SmoothScroll />
         <Header />
         <main className="site-main">{children}</main>
         <Footer />

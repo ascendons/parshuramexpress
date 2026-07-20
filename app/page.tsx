@@ -1,6 +1,7 @@
 import HeroCarousel from "../components/HeroCarousel";
 import ServiceCard from "../components/ServiceCard";
 import StatCounter from "../components/StatCounter";
+import Reveal from "../components/motion/Reveal";
 import Link from "next/link";
 
 export default function Home() {
@@ -78,7 +79,7 @@ export default function Home() {
       {/* Welcome & About Brief Section */}
       <section className="section">
         <div className="container welcome-grid">
-          <div className="welcome-info">
+          <Reveal className="welcome-info">
             <span className="section-subtitle">Who We Are</span>
             <h2>Welcome to Parshuram Express Logistics Pvt. Ltd.</h2>
             <p className="welcome-desc">
@@ -114,10 +115,10 @@ export default function Home() {
                 Complete Loading &amp; Packing
               </li>
             </ul>
-          </div>
+          </Reveal>
 
           {/* Achievement Box */}
-          <div className="achievement-showcase">
+          <Reveal className="achievement-showcase" delay={0.15}>
             <h3>Recognized Excellence</h3>
             <p className="welcome-desc" style={{ color: "var(--color-text-muted-light)", marginBottom: "30px" }}>
               Awarded for exceptional service quality and cargo handling standards, including recognition as the "Best Transporter of the Decade" by Saint Gobain.
@@ -130,14 +131,14 @@ export default function Home() {
                 <p>Decade Service Excellence</p>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Highlights / Features Banner */}
       <section className="section" style={{ backgroundColor: "#f1f5f9", padding: "60px 0" }}>
         <div className="container highlights-grid">
-          <div className="highlight-box">
+          <Reveal className="highlight-box">
             <div className="icon-wrapper">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
@@ -149,8 +150,8 @@ export default function Home() {
               <h3>GPS Vehicle Tracking</h3>
               <p>Real-time updates on vehicle position and estimated transit delivery timeframes.</p>
             </div>
-          </div>
-          <div className="highlight-box">
+          </Reveal>
+          <Reveal className="highlight-box" delay={0.1}>
             <div className="icon-wrapper">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
@@ -162,8 +163,8 @@ export default function Home() {
               <h3>Packaging &amp; Storage</h3>
               <p>Heavy duty wooden crating, bubble wrapping, and safe warehouse consolidation.</p>
             </div>
-          </div>
-          <div className="highlight-box">
+          </Reveal>
+          <Reveal className="highlight-box" delay={0.2}>
             <div className="icon-wrapper">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 3h18v18H3z"/>
@@ -174,29 +175,30 @@ export default function Home() {
               <h3>Financial Credibility</h3>
               <p>Backed by strong banking credibility, including Canara Bank as our financial partner.</p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Services Section */}
       <section className="section">
         <div className="container">
-          <div className="section-header">
+          <Reveal className="section-header">
             <span className="section-subtitle">Specializations</span>
             <h2 className="section-title">Logistics &amp; Transport Services</h2>
             <p className="section-desc">
               We provide a full range of freight, equipment placement, and material handling solutions.
             </p>
-          </div>
+          </Reveal>
           <div className="services-grid">
             {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                title={service.title}
-                description={service.description}
-                image={service.image}
-                link={service.link}
-              />
+              <Reveal key={index} delay={(index % 3) * 0.1}>
+                <ServiceCard
+                  title={service.title}
+                  description={service.description}
+                  image={service.image}
+                  link={service.link}
+                />
+              </Reveal>
             ))}
           </div>
         </div>
@@ -205,7 +207,7 @@ export default function Home() {
       {/* Stats Counter Section */}
       <section className="section section-dark">
         <div className="container stats-grid">
-          <div className="stat-box">
+          <Reveal className="stat-box">
             <div className="stat-icon-wrapper">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <polyline points="9 11 12 14 22 4" />
@@ -216,9 +218,9 @@ export default function Home() {
               <StatCounter end={500} suffix="+" />
             </div>
             <div className="stat-label">Projects Completed</div>
-          </div>
+          </Reveal>
 
-          <div className="stat-box">
+          <Reveal className="stat-box" delay={0.1}>
             <div className="stat-icon-wrapper">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <rect x="1" y="3" width="15" height="13" />
@@ -231,9 +233,9 @@ export default function Home() {
               <StatCounter end={150} suffix="+" />
             </div>
             <div className="stat-label">Attached Vehicles</div>
-          </div>
+          </Reveal>
 
-          <div className="stat-box">
+          <Reveal className="stat-box" delay={0.2}>
             <div className="stat-icon-wrapper">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <rect x="1" y="3" width="15" height="13" />
@@ -245,9 +247,9 @@ export default function Home() {
               <StatCounter end={50} suffix="+" />
             </div>
             <div className="stat-label">Owned Vehicles</div>
-          </div>
+          </Reveal>
 
-          <div className="stat-box">
+          <Reveal className="stat-box" delay={0.3}>
             <div className="stat-icon-wrapper">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -260,23 +262,23 @@ export default function Home() {
               <StatCounter end={30} suffix="+" />
             </div>
             <div className="stat-label">People in Team</div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Gallery Section */}
       <section className="section">
         <div className="container">
-          <div className="section-header">
+          <Reveal className="section-header">
             <span className="section-subtitle">Our Operations</span>
             <h2 className="section-title">Completed Project Highlights</h2>
             <p className="section-desc">
               Visual records of our machinery logistics and safe heavy equipment placements across India.
             </p>
-          </div>
+          </Reveal>
           <div className="gallery-grid" style={{ marginBottom: "40px" }}>
             {galleryItems.map((item, index) => (
-              <div key={index} className="gallery-item">
+              <Reveal key={index} delay={(index % 3) * 0.1} className="gallery-item">
                 <div
                   className="gallery-image-bg"
                   style={{ backgroundImage: `url(${item.image})` }}
@@ -284,7 +286,7 @@ export default function Home() {
                 <div className="gallery-overlay">
                   <span className="gallery-overlay-text">{item.title}</span>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
           <div style={{ textAlign: "center" }}>
@@ -299,7 +301,7 @@ export default function Home() {
       <section className="section" style={{ paddingBottom: "120px" }}>
         <div className="container">
           <div className="cta-split">
-            <div className="cta-split-left">
+            <Reveal className="cta-split-left">
               <h2>Ready to secure your machinery shipment?</h2>
               <p>
                 Get direct access to freight routing consultants, GPS vehicle coordination, safety crating guidelines, and competitive pricing for bulk freight.
@@ -312,8 +314,9 @@ export default function Home() {
                   Call Support
                 </a>
               </div>
-            </div>
-            <div
+            </Reveal>
+            <Reveal
+              delay={0.15}
               className="cta-split-right"
               style={{ backgroundImage: "url(https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600)" }}
             />

@@ -58,7 +58,7 @@ export default function Contact() {
               Corporate Office &amp; Inquiries
             </h2>
             <p className="welcome-desc" style={{ marginBottom: "30px" }}>
-              Our administration and accounts teams are based near major transit clusters on Tumkur Road, Bangalore. Connect directly via phone or email for fast bookings.
+              Our administration and accounts teams are based at our registered office in Ratu, Ranchi. Connect directly via phone or email for fast bookings.
             </p>
 
             <div className="contact-info-cards">
@@ -72,9 +72,9 @@ export default function Contact() {
                 <div>
                   <h4>Primary Address</h4>
                   <p>
-                    #12/1, Madavara Main Road,<br />
-                    Near Saint Gobain, Tumkur Road,<br />
-                    Bangalore - 562123, Karnataka, India
+                    C/O Santu Datta, Karamtoli,<br />
+                    Daladali Chowk, Simlia, Ratu,<br />
+                    Ranchi - 835222, Jharkhand, India
                   </p>
                 </div>
               </div>

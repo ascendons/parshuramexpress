@@ -38,7 +38,7 @@ export default function Services() {
     {
       id: "warehousing",
       title: "Safe Warehousing & Planned Storage",
-      description: "Our modern warehouses in strategic South India locations provide temporary and long-term storage facilities. Complete with inventory registries, secure loading docks, fire safety, and round-the-clock patrol.",
+      description: "Our modern warehouses in strategic locations across India provide temporary and long-term storage facilities. Complete with inventory registries, secure loading docks, fire safety, and round-the-clock patrol.",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
       features: ["24/7 Security & CCTV Monitoring", "Inventory Management Systems", "Flexible Storage Contracts", "Consolidation & Deconsolidation"],
     },

@@ -15,7 +15,7 @@ export default function HeroCarousel() {
   const slides: Slide[] = [
     {
       id: 1,
-      tagline: "South India's Leading Logistics Partner",
+      tagline: "India's Trusted Logistics Partner",
       title: "Safe & Reliable Transportation",
       description: "Operational excellence all over India with full security, timely delivery, and client-first commitment.",
       image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1200",

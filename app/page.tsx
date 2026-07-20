@@ -82,7 +82,7 @@ export default function Home() {
             <span className="section-subtitle">Who We Are</span>
             <h2>Welcome to Parshuram Express Logistics Pvt. Ltd.</h2>
             <p className="welcome-desc">
-              Parshuram Express makes business flow. As one of South India's leading transport and logistics companies, we design and implement industry-leading solutions in cargo transit all over India. We specialize in transporting woodworking machinery, CNC systems, heavy industrial goods, raw materials, bakery units, exhibition goods, and household cargo.
+              Parshuram Express makes business flow. As one of India's leading transport and logistics companies, we design and implement industry-leading solutions in cargo transit all over India. We specialize in transporting woodworking machinery, CNC systems, heavy industrial goods, raw materials, bakery units, exhibition goods, and household cargo.
             </p>
             <p className="welcome-desc" style={{ marginBottom: "24px" }}>
               With a dedicated workforce and a robust network of regional clusters, we ensure operational excellence and direct response to the most challenging supply chain projects.
@@ -271,7 +271,7 @@ export default function Home() {
             <span className="section-subtitle">Our Operations</span>
             <h2 className="section-title">Completed Project Highlights</h2>
             <p className="section-desc">
-              Visual records of our machinery logistics and safe heavy equipment placements in South India.
+              Visual records of our machinery logistics and safe heavy equipment placements across India.
             </p>
           </div>
           <div className="gallery-grid" style={{ marginBottom: "40px" }}>

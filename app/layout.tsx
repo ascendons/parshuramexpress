@@ -25,8 +25,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Parshuram Express Logistics Pvt. Ltd. | Trusted Transportation & Logistics",
-  description: "South India's leading transporter. Reliable cargo transportation all over India, including woodworking machines, CNC machines, industrial goods, warehousing, packing, and moving.",
-  keywords: "Parshuram Express, Parshuram Logistics, Transporter, Woodworking machine transport, CNC machine transport, Warehousing Bangalore, Logistics India, Packers and Movers",
+  description: "India's leading transporter. Reliable cargo transportation all over India, including woodworking machines, CNC machines, industrial goods, warehousing, packing, and moving.",
+  keywords: "Parshuram Express, Parshuram Logistics, Transporter, Woodworking machine transport, CNC machine transport, Warehousing Ranchi, Logistics India, Packers and Movers",
   authors: [{ name: "Parshuram Express Team" }],
 };
 

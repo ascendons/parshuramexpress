@@ -26,7 +26,7 @@ export default function About() {
           <span className="section-subtitle">Our Corporate Profile</span>
           <h1 style={{ fontSize: "40px", marginBottom: "10px" }}>About Parshuram Express</h1>
           <p style={{ color: "var(--color-text-muted-light)", maxWidth: "600px", margin: "0 auto" }}>
-            Learn more about South India's trusted logistics and transportation specialists.
+            Learn more about India's trusted logistics and transportation specialists.
           </p>
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function About() {
               Leading the Transport Sector with Excellence
             </h2>
             <p className="welcome-desc">
-              Parshuram Express Logistics Pvt. Ltd. was founded with a singular focus: to make industrial and commercial cargo movement seamless, safe, and highly efficient. Over the years, we have grown into one of South India's leading logistics providers, managing bulk shipments and high-value machinery distributions.
+              Parshuram Express Logistics Pvt. Ltd. was founded with a singular focus: to make industrial and commercial cargo movement seamless, safe, and highly efficient. We have grown into one of India's leading logistics providers, managing bulk shipments and high-value machinery distributions.
             </p>
             <p className="welcome-desc">
               Our operational standards are recognized by major corporate manufacturers, including our decade-long partnership and award-winning service achievements with Saint Gobain.
@@ -71,7 +71,7 @@ export default function About() {
                 alt="Parshuram Express Logistics Pvt. Ltd."
                 className="about-graphic-logo"
               />
-              <p>South India&apos;s Trusted Transporter</p>
+              <p>India&apos;s Trusted Transporter</p>
             </div>
           </div>
         </div>

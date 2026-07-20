@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
           </Link>
           <p className="about-text">
-            South India's premier transport and logistics partner. Specialized in heavy machinery transport, industrial logistics, and custom supply chain solutions.
+            India's trusted transport and logistics partner. Specialized in heavy machinery transport, industrial logistics, and custom supply chain solutions.
           </p>
           <span className="footer-tagline">TRUST • CARE • COMMITMENT</span>
         </div>
@@ -81,9 +81,9 @@ export default function Footer() {
                 <circle cx="12" cy="10" r="3"/>
               </svg>
               <span>
-                #12/1, Madavara Main Road,
-                Near Saint Gobain,
-                Tumkur Road, Bangalore - 562123
+                C/O Santu Datta, Karamtoli,
+                Daladali Chowk, Simlia, Ratu,
+                Ranchi - 835222, Jharkhand
               </span>
             </li>
             <li>
@@ -109,7 +109,10 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container bottom-container">
-          <p>&copy; {currentYear} Parshuram Express Logistics Pvt. Ltd. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} Parshuram Express Logistics Pvt. Ltd. All rights reserved.
+            <span className="footer-cin"> · CIN: U49231JH2026PTC028433</span>
+          </p>
           <div className="bottom-links">
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>

@@ -8,7 +8,7 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
-    service: "transport",
+    service: "ftl",
     message: "",
   });
 
@@ -59,7 +59,7 @@ export default function Contact() {
               Corporate Office &amp; Inquiries
             </h2>
             <p className="welcome-desc" style={{ marginBottom: "30px" }}>
-              Our administration and accounts teams are based at our registered office in Ratu, Ranchi. Connect directly via phone or email for fast bookings.
+              Our team is based at our registered office in Ranchi, Jharkhand. Connect directly via phone or email for bookings, rates, or vehicle placement.
             </p>
 
             <div className="contact-info-cards">
@@ -73,9 +73,9 @@ export default function Contact() {
                 <div>
                   <h4>Primary Address</h4>
                   <p>
-                    Karamtoli, Opposite Hanuman Mandir,<br />
-                    Daladali Chowk, Simlia, Ratu,<br />
-                    Ranchi - 835222, Jharkhand, India
+                    Near Daladalli Chowk, Karamtoli,<br />
+                    Opp. Hanuman Mandir,<br />
+                    Ranchi, Jharkhand - 835303, India
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Contact() {
                 <div>
                   <h4>Call Logistics Helpdesk</h4>
                   <p>
-                    <a href="tel:+917050044409">+91 70500 44409</a>
+                    <a href="tel:+917050044409">+91 7050044409</a>
                   </p>
                 </div>
               </div>
@@ -104,8 +104,23 @@ export default function Contact() {
                 <div>
                   <h4>Email Support</h4>
                   <p>
-                    <a href="mailto:info@parshuramexpress.com">info@parshuramexpress.com</a><br />
-                    <a href="mailto:accounts@parshuramexpress.com">accounts@parshuramexpress.com</a>
+                    <a href="mailto:cargo23062026@gmail.com">cargo23062026@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="contact-info-card">
+                <div className="icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M3 3h18v18H3z"/>
+                    <path d="M21 9H3M21 15H3M12 3v18"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Corporate Details</h4>
+                  <p>
+                    CIN: U49231JH2026PTC028433<br />
+                    GSTIN: 20AARCP2584Q1ZQ
                   </p>
                 </div>
               </div>
@@ -139,7 +154,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="form-input"
-                    placeholder="70500 44409"
+                    placeholder="7050044409"
                     required
                   />
                 </div>
@@ -169,12 +184,12 @@ export default function Contact() {
                   className="form-input"
                   style={{ background: "white" }}
                 >
-                  <option value="transport">All India Cargo Transport</option>
-                  <option value="woodworking">Woodworking Machine Relocation</option>
-                  <option value="cnc">CNC or Heavy Rigging</option>
-                  <option value="bakery">Bakery Equipment Transit</option>
-                  <option value="warehousing">Warehouse Storage Booking</option>
-                  <option value="packing">Packing or Loading Crates</option>
+                  <option value="ftl">Full Truck Load (FTL)</option>
+                  <option value="ltl">Part Load / LTL</option>
+                  <option value="dedicated-fleet">Dedicated Vehicle Services</option>
+                  <option value="express">Express & Priority Transport</option>
+                  <option value="door-to-door">Door-to-Door Delivery</option>
+                  <option value="long-distance">Long-Distance Road Transport</option>
                 </select>
               </div>
 

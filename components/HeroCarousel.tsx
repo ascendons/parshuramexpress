@@ -15,23 +15,23 @@ export default function HeroCarousel() {
   const slides: Slide[] = [
     {
       id: 1,
-      tagline: "India's Trusted Logistics Partner",
-      title: "Safe & Reliable Transportation",
-      description: "Operational excellence all over India with full security, timely delivery, and client-first commitment.",
+      tagline: "We Connect. We Deliver.",
+      title: "On Time, Every Time — Pan-India Freight",
+      description: "A premier transport & supply chain partner providing end-to-end, reliable, cost-optimized freight movement solutions across India.",
       image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1200",
     },
     {
       id: 2,
-      tagline: "Specialized Equipment Handling",
-      title: "Heavy Machinery Transport",
-      description: "Expert logistics and transport for CNC machines, industrial woodworking tools, and heavy food manufacturing equipment.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
+      tagline: "Full Truck Load & Dedicated Fleet",
+      title: "Precision Vehicle Placement, Every Consignment",
+      description: "Point-to-point FTL, custom vehicle deployment, and express priority transit engineered for time-sensitive freight.",
+      image: "https://images.unsplash.com/photo-1516576885230-100c08f53839?auto=format&fit=crop&q=80&w=1200",
     },
     {
       id: 3,
-      tagline: "Secure & Planned Storage",
-      title: "Warehousing & Supply Chain",
-      description: "Equipped warehouses with round-the-clock security, professional loading, packaging, and sorting logistics.",
+      tagline: "Door-to-Door, Nationwide",
+      title: "From First-Mile Pickup to Final POD",
+      description: "Long-distance road transport and consolidated LTL movement, backed by strict transit monitoring and safe cargo handling.",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
     },
   ];

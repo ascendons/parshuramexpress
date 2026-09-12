@@ -6,17 +6,28 @@ import Reveal from "../../components/motion/Reveal";
 export default function About() {
   const values = [
     {
-      title: "Trust",
-      description: "Our clients rely on us for their most valuable equipment shipments. We maintain complete transparency and integrity in every transaction.",
+      title: "Reliable Placement",
+      description: "Precision vehicle matching tailored to consignment volume and route complexity — the right vehicle, every time.",
     },
     {
-      title: "Care",
-      description: "From specialized wooden wrapping to high-grade loading techniques, we treat every machinery cargo with the utmost precision and safety.",
+      title: "Safe Cargo Handling",
+      description: "Professional lashing, transit protection, and zero-damage delivery standards across every consignment we move.",
     },
     {
-      title: "Commitment",
-      description: "We are dedicated to meeting strict timelines and providing responsive support all across our 17 regional clusters in India.",
+      title: "Operational Excellence",
+      description: "Proactive lifecycle management from initial dispatch to final POD delivery, backed by strict transit monitoring.",
     },
+  ];
+
+  const industries = [
+    "Manufacturers & Industries",
+    "Distributors & Wholesalers",
+    "FMCG & Consumer Goods",
+    "Retail & E-Commerce",
+    "Automobile & Components",
+    "Infrastructure & Construction",
+    "Commercial Traders",
+    "Corporate Enterprises",
   ];
 
   return (
@@ -27,7 +38,7 @@ export default function About() {
           <span className="section-subtitle">Our Corporate Profile</span>
           <h1 style={{ fontSize: "40px", marginBottom: "10px" }}>About Parshuram Express</h1>
           <p style={{ color: "var(--color-text-muted-light)", maxWidth: "600px", margin: "0 auto" }}>
-            Learn more about India's trusted logistics and transportation specialists.
+            Your Cargo, Our Commitment | Your Trust, Our Responsibility.
           </p>
         </div>
       </section>
@@ -36,31 +47,31 @@ export default function About() {
       <section className="section">
         <div className="container about-split">
           <Reveal className="about-content">
-            <span className="section-subtitle">Establishment</span>
+            <span className="section-subtitle">Company Overview</span>
             <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "800" }}>
-              Leading the Transport Sector with Excellence
+              A Premier Transport &amp; Supply Chain Partner
             </h2>
             <p className="welcome-desc">
-              Parshuram Express Logistics Pvt. Ltd. was founded with a singular focus: to make industrial and commercial cargo movement seamless, safe, and highly efficient. We have grown into one of India's leading logistics providers, managing bulk shipments and high-value machinery distributions.
+              Parshuram Express Logistics Pvt. Ltd. is a professional transport &amp; logistics service provider offering reliable, efficient and cost-effective transportation solutions for businesses across India. We specialize in road transportation, full truck load, part load, dedicated vehicle movement, express transportation and door-to-door cargo delivery.
             </p>
             <p className="welcome-desc">
-              Our operational standards are recognized by major corporate manufacturers, including our decade-long partnership and award-winning service achievements with Saint Gobain.
+              Our focus is simple — the right vehicle, the right route, the right handling and the right delivery time. We believe transportation is more than moving goods from one place to another; it is about protecting your cargo, meeting delivery commitments, and building long-term business relationships.
             </p>
             <p className="welcome-desc">
-              We leverage an extensive network of attached and owned vehicles, skilled loading/packing specialists, and GPS-guided fleet control rooms to deliver a superior logistics experience.
+              We leverage precision vehicle matching, proactive transit monitoring, and a Pan-India operations network to deliver a dependable, single-point transportation experience.
             </p>
             <div className="about-features">
               <div className="about-feature">
                 <span className="icon-bullet">✓</span>
-                30+ Dedicated Logistics Coordinators &amp; Employees
+                Pan-India Operations Network
               </div>
               <div className="about-feature">
                 <span className="icon-bullet">✓</span>
-                17 Regional Clusters for Seamless Interstate Transit
+                CIN: U49231JH2026PTC028433
               </div>
               <div className="about-feature">
                 <span className="icon-bullet">✓</span>
-                Strong Financial Backing by Canara Bank
+                GSTIN: 20AARCP2584Q1ZQ
               </div>
             </div>
           </Reveal>
@@ -72,7 +83,7 @@ export default function About() {
                 alt="Parshuram Express Logistics Pvt. Ltd."
                 className="about-graphic-logo"
               />
-              <p>India&apos;s Trusted Transporter</p>
+              <p>We Connect. We Deliver.<br />On Time, Every Time.</p>
             </div>
           </Reveal>
         </div>
@@ -82,10 +93,10 @@ export default function About() {
       <section className="section" style={{ backgroundColor: "#f1f5f9" }}>
         <div className="container">
           <Reveal className="section-header">
-            <span className="section-subtitle">Our Foundations</span>
+            <span className="section-subtitle">Why Parshuram Express</span>
             <h2 className="section-title">Core Corporate Values</h2>
             <p className="section-desc">
-              These principles guide every shipment, fleet deployment, and client service dispatch.
+              These principles guide every booking, vehicle placement, and delivery confirmation.
             </p>
           </Reveal>
           <div className="services-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
@@ -121,14 +132,35 @@ export default function About() {
         </div>
       </section>
 
+      {/* Business Clients / Industries Section */}
+      <section className="section">
+        <div className="container">
+          <Reveal className="section-header">
+            <span className="section-subtitle">Our Business Clients</span>
+            <h2 className="section-title">Industries We Serve</h2>
+            <p className="section-desc">
+              Dependable logistics support designed around the transportation needs of business clients.
+            </p>
+          </Reveal>
+          <Reveal className="industries-grid">
+            {industries.map((industry) => (
+              <span key={industry} className="industry-chip">
+                <span className="chip-dot" />
+                {industry}
+              </span>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
       {/* FAQ & CTA Section */}
       <section className="section" style={{ paddingBottom: "120px" }}>
         <Reveal className="container" style={{ textAlign: "center", maxWidth: "800px" }}>
           <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "800" }}>
-            Partner with a Leader in Logistics
+            Partner with a Dependable Logistics Provider
           </h2>
           <p className="welcome-desc" style={{ marginBottom: "40px" }}>
-            Whether you need custom woodworking machinery transit, heavy-load flatbed trailers, or short-term warehouse holding, Parshuram Express is ready to assist your team.
+            Whether you need full truck load movement, consolidated part load shipments, a dedicated fleet, or express priority transit, Parshuram Express is ready to assist your team.
           </p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center" }}>
             <Link href="/contact" className="btn btn-primary">

@@ -22,9 +22,9 @@ export default function Footer() {
             </div>
           </Link>
           <p className="about-text">
-            India's trusted transport and logistics partner. Specialized in heavy machinery transport, industrial logistics, and custom supply chain solutions.
+            Your Cargo, Our Commitment | Your Trust, Our Responsibility. A premier transport &amp; supply chain partner providing end-to-end, reliable, cost-optimized freight movement across India.
           </p>
-          <span className="footer-tagline">TRUST • CARE • COMMITMENT</span>
+          <span className="footer-tagline">WE CONNECT. WE DELIVER. ON TIME EVERY TIME.</span>
         </div>
 
         {/* Services Links */}
@@ -32,19 +32,19 @@ export default function Footer() {
           <h4 className="widget-title">Our Services</h4>
           <ul>
             <li>
-              <Link href="/services#transport">Heavy Transportation</Link>
+              <Link href="/services#ftl">Full Truck Load (FTL)</Link>
             </li>
             <li>
-              <Link href="/services#machinery">CNC &amp; Woodworking Machinery</Link>
+              <Link href="/services#ltl">Part Load / LTL</Link>
             </li>
             <li>
-              <Link href="/services#industrial">Industrial Goods Logistics</Link>
+              <Link href="/services#dedicated-fleet">Dedicated Vehicle Services</Link>
             </li>
             <li>
-              <Link href="/services#warehousing">Safe Warehousing &amp; Storage</Link>
+              <Link href="/services#express">Express &amp; Priority Transport</Link>
             </li>
             <li>
-              <Link href="/services#packing">Loading &amp; Packing Services</Link>
+              <Link href="/services#door-to-door">Door-to-Door Delivery</Link>
             </li>
           </ul>
         </div>
@@ -81,9 +81,9 @@ export default function Footer() {
                 <circle cx="12" cy="10" r="3"/>
               </svg>
               <span>
-                Karamtoli, Opposite Hanuman Mandir,
-                Daladali Chowk, Simlia, Ratu,
-                Ranchi - 835222, Jharkhand
+                Near Daladalli Chowk, Karamtoli,
+                Opp. Hanuman Mandir,
+                Ranchi, Jharkhand - 835303
               </span>
             </li>
             <li>
@@ -91,16 +91,16 @@ export default function Footer() {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="icon">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                 </svg>
-                +91 70500 44409
+                +91 7050044409
               </a>
             </li>
             <li>
-              <a href="mailto:info@parshuramexpress.com" className="contact-link">
+              <a href="mailto:cargo23062026@gmail.com" className="contact-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="icon">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
-                info@parshuramexpress.com
+                cargo23062026@gmail.com
               </a>
             </li>
           </ul>
@@ -111,7 +111,7 @@ export default function Footer() {
         <div className="container bottom-container">
           <p>
             &copy; {currentYear} Parshuram Express Logistics Pvt. Ltd. All rights reserved.
-            <span className="footer-cin"> · CIN: U49231JH2026PTC028433</span>
+            <span className="footer-cin"> · CIN: U49231JH2026PTC028433 · GSTIN: 20AARCP2584Q1ZQ</span>
           </p>
           <div className="bottom-links">
             <Link href="/privacy">Privacy Policy</Link>

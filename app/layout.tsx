@@ -25,10 +25,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Parshuram Express Logistics Pvt. Ltd. | Trusted Transportation & Logistics",
-  description: "India's leading transporter. Reliable cargo transportation all over India, including woodworking machines, CNC machines, industrial goods, warehousing, packing, and moving.",
-  keywords: "Parshuram Express, Parshuram Logistics, Transporter, Woodworking machine transport, CNC machine transport, Warehousing Ranchi, Logistics India, Packers and Movers",
-  authors: [{ name: "Parshuram Express Team" }],
+  title: "Parshuram Express Logistics Pvt. Ltd. | FTL, LTL & Express Freight Transport",
+  description: "Parshuram Express Logistics Pvt. Ltd. — Pan-India transport & supply chain partner offering full truck load (FTL), part load (LTL), dedicated fleet, express transit, and door-to-door cargo delivery. We Connect. We Deliver. On Time, Every Time.",
+  keywords: "Parshuram Express, Parshuram Express Logistics, FTL transport, LTL transport, part load logistics, dedicated fleet, express transit, door to door delivery, Ranchi logistics, Jharkhand transporter, Pan India freight",
+  authors: [{ name: "Parshuram Express Logistics Pvt. Ltd." }],
 };
 
 export default function RootLayout({

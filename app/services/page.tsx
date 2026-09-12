@@ -3,53 +3,60 @@ import Reveal from "../../components/motion/Reveal";
 export default function Services() {
   const serviceList = [
     {
-      id: "transport",
-      title: "All India Heavy Transportation",
-      description: "We provide comprehensive road transportation solutions across all 29 states in India. From raw materials to heavy industrial components, our fleet guarantees secure and scheduled transit. Equipped with GPS and managed by certified interstate operators.",
+      id: "ftl",
+      title: "Full Truck Load (FTL)",
+      description: "Dedicated trucks for large-volume consignments with direct point-to-point transportation, minimizing handling and transit time. Ideal for large consignments requiring minimum transit handling and complete vehicle control.",
       image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800",
-      features: ["Interstate Permits & Clearances", "Full Truck Load (FTL) Options", "GPS Vehicle Track & Trace", "24/7 Route Coordination Desk"],
+      features: ["Direct Point-to-Point Transit", "Minimum Handling & Transit Time", "Precision Vehicle Matching", "24/7 Route Coordination Desk"],
     },
     {
-      id: "woodworking",
-      title: "Woodworking Machine Logistics",
-      description: "Transporting woodworking machinery requires specialized loading docks, careful tie-down rigs, and experienced operators. We handle edge banders, panel saws, automated CNC woodworking lines, and sanders with complete damage-free assurance.",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
-      features: ["Machinery Rigging & Lifting", "Cushioned Transit Ties", "Tailored Insurance Coverage", "On-site Placement Support"],
-    },
-    {
-      id: "cnc",
-      title: "CNC Machine & Heavy Machinery",
-      description: "Precision CNC machinery is highly sensitive to vibrations and tilt. Our specialized logistics team uses custom flatbed trailers, air-ride suspension options, and protective wrapping to ensure alignment and calibrations remain intact.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
-      features: ["Vibration-dampened Trailers", "Industrial Crane Loading", "Climate-secure Tarps", "Heavy Cargo Transit Approvals"],
-    },
-    {
-      id: "bakery",
-      title: "Bakery & Food Processing Equipment",
-      description: "Specialized logistics support for commercial kitchens, retail bakery operations, and food production plants. We relocate sensitive machinery like industrial deck ovens, mixers, sorting belts, and refrigeration units.",
-      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800",
-      features: ["Food-Grade Wrapping Guidelines", "Heavy Oven Relocations", "Temperature Control Transit", "Multi-Unit Assembly Planning"],
-    },
-    {
-      id: "exhibition",
-      title: "Exhibition Goods & Event Logistics",
-      description: "Timing is critical for corporate exhibitions and commercial displays. We manage the pickup, transport, safe delivery, unloading, and subsequent retrieval of display materials, showroom samples, and event booths.",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
-      features: ["Strict Event Deadline Adherence", "Safe Unloading & Unpacking", "Multi-Stop Return Routing", "Priority Showroom Transit"],
-    },
-    {
-      id: "warehousing",
-      title: "Safe Warehousing & Planned Storage",
-      description: "Our modern warehouses in strategic locations across India provide temporary and long-term storage facilities. Complete with inventory registries, secure loading docks, fire safety, and round-the-clock patrol.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
-      features: ["24/7 Security & CCTV Monitoring", "Inventory Management Systems", "Flexible Storage Contracts", "Consolidation & Deconsolidation"],
-    },
-    {
-      id: "packing",
-      title: "Industrial Packing & Crating",
-      description: "Proper packaging is the first line of defense for freight. We offer professional industrial packing services, including heavy wooden box crating, vacuum packaging, bubble padding, and custom anti-corrosion sheets for ocean/road transit.",
+      id: "ltl",
+      title: "Part Load / LTL",
+      description: "Reliable and economical transportation for smaller consignments through consolidated freight movement, helping businesses optimize transportation costs without compromising on delivery reliability.",
       image: "https://images.unsplash.com/photo-1607473129014-0afb7ded099e?auto=format&fit=crop&q=80&w=800",
-      features: ["Heavy Duty Wooden Crates", "Anti-Rust Vacuum Packaging", "Shock & Moisture Indicators", "Fragile Component Sorting"],
+      features: ["Consolidated Freight Movement", "Cost-Optimized Shipping", "Ideal for Smaller Consignments", "Reliable Transit Scheduling"],
+    },
+    {
+      id: "dedicated-fleet",
+      title: "Dedicated Vehicle Services",
+      description: "Dedicated vehicle arrangements for regular business requirements, providing better control, consistent movement and dependable delivery schedules. Custom vehicle deployment for enterprise contracts with guaranteed availability.",
+      image: "https://images.unsplash.com/photo-1516576885230-100c08f53839?auto=format&fit=crop&q=80&w=800",
+      features: ["Guaranteed Vehicle Availability", "Consistent Movement Schedules", "Enterprise Contract Support", "Better Operational Control"],
+    },
+    {
+      id: "express",
+      title: "Express & Priority Transport",
+      description: "Fast transportation solutions for time-sensitive and urgent consignments, with priority movement and close operational coordination. Fast-track priority transport engineered for urgent freight.",
+      image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80&w=800",
+      features: ["Priority Movement Scheduling", "Urgent Consignment Handling", "Close Operational Coordination", "Fast-Track Dispatch"],
+    },
+    {
+      id: "door-to-door",
+      title: "Door-to-Door Delivery",
+      description: "Complete transportation support from pickup location to final destination, including first-mile pickup and last-mile delivery. Seamless end-to-end coverage with final verified delivery.",
+      image: "https://images.unsplash.com/photo-1553413719-8758737f8f7f?auto=format&fit=crop&q=80&w=800",
+      features: ["First-Mile Pickup", "Last-Mile Delivery", "Single-Point Coordination", "Final Verified Delivery (POD)"],
+    },
+    {
+      id: "regular-business",
+      title: "Regular Business Transportation",
+      description: "Transportation solutions for companies requiring frequent and scheduled cargo movement, with coordinated vehicle placement and delivery management for ongoing business needs.",
+      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800&sat=-20",
+      features: ["Frequent & Scheduled Movement", "Coordinated Vehicle Placement", "Dependable Delivery Management", "Business-Focused Service"],
+    },
+    {
+      id: "long-distance",
+      title: "Long-Distance Road Transport",
+      description: "Efficient road transportation for intercity and interstate cargo movement, supported by route planning and operational coordination. Optimized with continuous transit tracking.",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+      features: ["Intercity & Interstate Transit", "Route Planning & Coordination", "Continuous Transit Tracking", "Pan-India Network"],
+    },
+    {
+      id: "pickup-delivery",
+      title: "Pickup & Delivery Management",
+      description: "Coordinated pickup, transit and delivery operations to provide businesses with a single-point transportation solution — booking through POD confirmation, fully managed.",
+      image: "https://images.unsplash.com/photo-1607473129014-0afb7ded099e?auto=format&fit=crop&q=80&w=800&sat=-20",
+      features: ["Single-Point Transportation Solution", "Coordinated Pickup & Transit", "Transparent Delivery Process", "POD / Delivery Confirmation"],
     },
   ];
 
@@ -59,9 +66,9 @@ export default function Services() {
       <section className="section section-dark" style={{ padding: "60px 0", textAlign: "center" }}>
         <div className="container">
           <span className="section-subtitle">What We Do</span>
-          <h1 style={{ fontSize: "40px", marginBottom: "10px" }}>Logistics Solutions Directory</h1>
+          <h1 style={{ fontSize: "40px", marginBottom: "10px" }}>Transport &amp; Logistics Services</h1>
           <p style={{ color: "var(--color-text-muted-light)", maxWidth: "600px", margin: "0 auto" }}>
-            Comprehensive transportation, packaging, and warehouse storage operations tailored to your business needs.
+            Reliable, efficient and cost-effective transportation solutions for businesses across India.
           </p>
         </div>
       </section>

@@ -3,49 +3,49 @@ import Reveal from "../../components/motion/Reveal";
 export default function Gallery() {
   const galleryItems = [
     {
-      title: "Interstate Fleet Transit",
-      category: "Transportation",
+      title: "Interstate FTL Transit",
+      category: "Full Truck Load",
       image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "Precision CNC Router Rigging",
-      category: "Machinery",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+      title: "Consolidated LTL Sorting",
+      category: "Part Load / LTL",
+      image: "https://images.unsplash.com/photo-1607473129014-0afb7ded099e?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "Industrial Storage Facility",
+      title: "Secure Warehouse Consolidation",
       category: "Warehousing",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "Heavy Woodworking Line Placement",
-      category: "Machinery",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
-    },
-    {
-      title: "Consolidated Warehouse Sorting",
-      category: "Warehousing",
-      image: "https://images.unsplash.com/photo-1607473129014-0afb7ded099e?auto=format&fit=crop&q=80&w=800",
-    },
-    {
-      title: "Flatbed Trailer Setup",
-      category: "Transportation",
+      title: "Dedicated Fleet Deployment",
+      category: "Dedicated Fleet",
       image: "https://images.unsplash.com/photo-1516576885230-100c08f53839?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "Bakery Oven Relocation",
-      category: "Machinery",
-      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800",
-    },
-    {
-      title: "Heavy Cargo Dock Loading",
-      category: "Transportation",
+      title: "Priority Express Loading",
+      category: "Express Transit",
       image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "High-Volume Inventory Control",
-      category: "Warehousing",
+      title: "First-Mile Pickup Coordination",
+      category: "Door-to-Door",
       image: "https://images.unsplash.com/photo-1553413719-8758737f8f7f?auto=format&fit=crop&q=80&w=800",
+    },
+    {
+      title: "Long-Haul Route Transit",
+      category: "Long-Distance Freight",
+      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800&sat=-20",
+    },
+    {
+      title: "Vehicle Placement & Loading",
+      category: "Full Truck Load",
+      image: "https://images.unsplash.com/photo-1607473129014-0afb7ded099e?auto=format&fit=crop&q=80&w=800&sat=-20",
+    },
+    {
+      title: "Pan-India Transit Monitoring",
+      category: "Operational Excellence",
+      image: "https://images.unsplash.com/photo-1516576885230-100c08f53839?auto=format&fit=crop&q=80&w=800&sat=-20",
     },
   ];
 
@@ -57,7 +57,7 @@ export default function Gallery() {
           <span className="section-subtitle">Visual Records</span>
           <h1 style={{ fontSize: "40px", marginBottom: "10px" }}>Operations Gallery</h1>
           <p style={{ color: "var(--color-text-muted-light)", maxWidth: "600px", margin: "0 auto" }}>
-            Take a look at our specialized transport fleet, heavy machinery packaging, and secure warehouse facilities.
+            Take a look at our FTL, LTL, dedicated fleet, and express transit operations across India.
           </p>
         </div>
       </section>

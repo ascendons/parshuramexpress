@@ -152,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* Why Parshuram Express Section */}
-      <section className="section" style={{ backgroundColor: "#f1f5f9", padding: "60px 0" }}>
+      <section className="section" style={{ backgroundColor: "var(--color-bg-alt)", padding: "60px 0" }}>
         <div className="container highlights-grid">
           <Reveal className="highlight-box">
             <div className="icon-wrapper">
@@ -273,7 +273,7 @@ export default function Home() {
       </section>
 
       {/* Stats Counter Section */}
-      <section className="section" style={{ backgroundColor: "#f1f5f9" }}>
+      <section className="section" style={{ backgroundColor: "var(--color-bg-alt)" }}>
         <div className="container stats-grid">
           <Reveal className="stat-box" style={{ backgroundColor: "var(--color-text-white)", border: "1px solid var(--color-border-light)" }}>
             <div className="stat-icon-wrapper">

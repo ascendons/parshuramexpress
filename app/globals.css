@@ -1,35 +1,40 @@
 :root {
   /* Font Families */
-  --font-heading: var(--font-outfit), system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), system-ui, sans-serif;
   --font-body: var(--font-inter), system-ui, sans-serif;
 
-  /* Color Palette - Premium Navy, White, and Crimson theme */
-  --color-bg-dark: #090d16;
-  --color-bg-navy: #111726;
-  --color-bg-card: #182235;
-  --color-bg-light: #f8fafc;
-  --color-border-dark: #1e293b;
-  --color-border-light: #e2e8f0;
-  
-  --color-primary: #dc2626; /* Crimson Red */
-  --color-primary-hover: #b91c1c;
-  --color-primary-rgb: 220, 38, 38;
-  
-  --color-text-white: #ffffff;
-  --color-text-dark: #0f172a;
-  --color-text-muted: #64748b;
-  --color-text-muted-light: #94a3b8;
-  
+  /* Color Palette - "Industrial Signal": charcoal-navy, signal orange, crimson accent */
+  --color-bg-dark: #0b0e14;
+  --color-bg-navy: #131826;
+  --color-bg-card: #1b2333;
+  --color-bg-light: #fafafa;
+  --color-bg-alt: #f4f4f5;
+  --color-border-dark: #262b38;
+  --color-border-light: #e4e4e7;
+
+  --color-primary: #ea580c; /* Signal Orange */
+  --color-primary-hover: #c2410c;
+  --color-primary-rgb: 234, 88, 12;
+
+  --color-secondary: #dc2626; /* Crimson accent */
+  --color-secondary-hover: #b91c1c;
+  --color-secondary-rgb: 220, 38, 38;
+
+  --color-text-white: #f4f4f5;
+  --color-text-dark: #18181b;
+  --color-text-muted: #52525b;
+  --color-text-muted-light: #a1a1aa;
+
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-glow: 0 0 20px rgba(220, 38, 38, 0.25);
-  
+  --shadow-glow: 0 0 20px rgba(234, 88, 12, 0.3);
+
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
   --radius-full: 9999px;
-  
+
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
@@ -93,7 +98,7 @@ img {
 .brand-accent-bar {
   height: 4px;
   width: 100%;
-  background: linear-gradient(90deg, var(--color-primary) 0%, #f97316 35%, #1e3a8a 70%, #0f172a 100%);
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 45%, #1e3a8a 75%, #0b0e14 100%);
 }
 
 /* Section Common Styles */
@@ -132,7 +137,7 @@ img {
 
 .section-title {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 16px;
 }
 
@@ -252,7 +257,7 @@ img {
 }
 
 .main-nav-bar {
-  background-color: rgba(248, 250, 252, 0.9);
+  background-color: rgba(250, 250, 250, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border-light);
@@ -299,7 +304,7 @@ img {
 
 .logo-brand {
   font-family: var(--font-heading);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 20px;
   color: var(--color-text-white);
   letter-spacing: 1px;
@@ -505,7 +510,7 @@ img {
 
 .footer-tagline {
   color: var(--color-primary);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.5px;
 }
@@ -626,7 +631,7 @@ img {
 
 .hero-tag {
   color: var(--color-primary);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 2px;
   font-size: 14px;
   text-transform: uppercase;
@@ -636,7 +641,7 @@ img {
 
 .hero-title {
   font-size: 52px;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-text-white);
   margin-bottom: 20px;
   line-height: 1.1;
@@ -688,7 +693,7 @@ img {
 
 .welcome-info h2 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -816,7 +821,7 @@ img {
 .stat-number {
   font-family: var(--font-heading);
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-text-white);
   margin-bottom: 8px;
   line-height: 1;
@@ -905,7 +910,7 @@ img {
 
 .cta-split-left h2 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 16px;
   color: var(--color-text-white);
 }
@@ -1088,7 +1093,7 @@ img {
 .form-input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.15);
 }
 
 textarea.form-input {
@@ -1197,7 +1202,7 @@ textarea.form-input {
 
 .detailed-service-content h3 {
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 16px;
 }
 
@@ -1250,7 +1255,7 @@ textarea.form-input {
 
 .corporate-badge strong {
   color: var(--color-text-dark);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .section-dark .corporate-badge {
@@ -1268,7 +1273,7 @@ textarea.form-input {
   position: relative;
   background-color: var(--color-bg-navy);
   border: 1px solid var(--color-border-dark);
-  border-left: 4px solid var(--color-primary);
+  border-left: 4px solid var(--color-secondary);
   border-radius: var(--radius-lg);
   padding: 44px 50px;
 }
@@ -1320,7 +1325,7 @@ textarea.form-input {
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
   font-family: var(--font-heading);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 20px;
   margin-bottom: 16px;
   position: relative;

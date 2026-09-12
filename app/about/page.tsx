@@ -48,7 +48,7 @@ export default function About() {
         <div className="container about-split">
           <Reveal className="about-content">
             <span className="section-subtitle">Company Overview</span>
-            <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "800" }}>
+            <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "700" }}>
               A Premier Transport &amp; Supply Chain Partner
             </h2>
             <p className="welcome-desc">
@@ -90,7 +90,7 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="section" style={{ backgroundColor: "#f1f5f9" }}>
+      <section className="section" style={{ backgroundColor: "var(--color-bg-alt)" }}>
         <div className="container">
           <Reveal className="section-header">
             <span className="section-subtitle">Why Parshuram Express</span>
@@ -122,7 +122,7 @@ export default function About() {
                     borderRadius: "50%",
                   }}
                 >
-                  <span style={{ fontSize: "20px", fontWeight: "800" }}>{idx + 1}</span>
+                  <span style={{ fontSize: "20px", fontWeight: "700" }}>{idx + 1}</span>
                 </div>
                 <h3 style={{ fontSize: "20px", marginBottom: "12px" }}>{value.title}</h3>
                 <p style={{ fontSize: "14px", color: "var(--color-text-muted)" }}>{value.description}</p>
@@ -156,7 +156,7 @@ export default function About() {
       {/* FAQ & CTA Section */}
       <section className="section" style={{ paddingBottom: "120px" }}>
         <Reveal className="container" style={{ textAlign: "center", maxWidth: "800px" }}>
-          <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "800" }}>
+          <h2 style={{ fontSize: "32px", marginBottom: "20px", fontWeight: "700" }}>
             Partner with a Dependable Logistics Provider
           </h2>
           <p className="welcome-desc" style={{ marginBottom: "40px" }}>

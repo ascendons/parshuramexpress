@@ -55,7 +55,7 @@ export default function Contact() {
           {/* Info Side */}
           <Reveal className="contact-info-side">
             <span className="section-subtitle">Support Center</span>
-            <h2 style={{ fontSize: "28px", marginBottom: "24px", fontWeight: "800" }}>
+            <h2 style={{ fontSize: "28px", marginBottom: "24px", fontWeight: "700" }}>
               Corporate Office &amp; Inquiries
             </h2>
             <p className="welcome-desc" style={{ marginBottom: "30px" }}>

@@ -5,7 +5,7 @@ export const site = {
   tagline: "We Connect. We Deliver. On Time, Every Time.",
   phone: "7050044409",
   phoneDisplay: "+91 70500 44409",
-  email: "cargo23062026@gmail.com",
+  email: "contact@parshuramexpress.com",
   cin: "U49231JH2026PTC028433",
   gstin: "20AARCP2584Q1ZQ",
   address: {

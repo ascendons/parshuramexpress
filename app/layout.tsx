@@ -1,34 +1,67 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Fraunces, Manrope, JetBrains_Mono } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MobileDock from "../components/MobileDock";
 import SmoothScroll from "../components/motion/SmoothScroll";
+import { site } from "../lib/site";
 import "./globals.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-plus-jakarta-sans",
+  style: ["normal", "italic"],
+  axes: ["opsz", "SOFT", "WONK"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-jetbrains",
   display: "swap",
 });
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
+  themeColor: "#06101f",
 };
 
 export const metadata: Metadata = {
-  title: "Parshuram Express Logistics Pvt. Ltd. | FTL, LTL & Express Freight Transport",
-  description: "Parshuram Express Logistics Pvt. Ltd. — Pan-India transport & supply chain partner offering full truck load (FTL), part load (LTL), dedicated fleet, express transit, and door-to-door cargo delivery. We Connect. We Deliver. On Time, Every Time.",
-  keywords: "Parshuram Express, Parshuram Express Logistics, FTL transport, LTL transport, part load logistics, dedicated fleet, express transit, door to door delivery, Ranchi logistics, Jharkhand transporter, Pan India freight",
-  authors: [{ name: "Parshuram Express Logistics Pvt. Ltd." }],
+  title: {
+    default: "Parshuram Express Logistics Pvt. Ltd. | FTL, LTL & Express Freight Transport",
+    template: "%s | Parshuram Express Logistics",
+  },
+  description:
+    "Parshuram Express Logistics Pvt. Ltd. — Pan-India transport & supply chain partner offering full truck load (FTL), part load (LTL), dedicated fleet, express transit, and door-to-door cargo delivery. We Connect. We Deliver. On Time, Every Time.",
+  keywords:
+    "Parshuram Express, Parshuram Express Logistics, FTL transport, LTL transport, part load logistics, dedicated fleet, express transit, door to door delivery, Ranchi logistics, Jharkhand transporter, Pan India freight",
+  authors: [{ name: site.name }],
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: site.name,
+  slogan: site.tagline,
+  telephone: `+91${site.phone}`,
+  email: site.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Near Daladalli Chowk, Karamtoli, Opp. Hanuman Mandir",
+    addressLocality: "Ranchi",
+    addressRegion: "Jharkhand",
+    postalCode: "835303",
+    addressCountry: "IN",
+  },
+  areaServed: "IN",
 };
 
 export default function RootLayout({
@@ -37,12 +70,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable}`}>
-      <body className="antialiased">
+    <html lang="en" className={`${fraunces.variable} ${manrope.variable} ${jetbrains.variable}`}>
+      <body>
         <SmoothScroll />
         <Header />
-        <main className="site-main">{children}</main>
+        <main>{children}</main>
         <Footer />
+        <MobileDock />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </body>
     </html>
   );

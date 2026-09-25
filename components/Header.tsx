@@ -1,142 +1,88 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import logoIcon from "../assets/logo-icon.png";
+import logoLight from "../assets/logo-icon-light.png";
+import { navLinks, site } from "../lib/site";
+import { Arrow } from "./icons";
 
 export default function Header() {
   const pathname = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact Us", href: "/contact" },
-  ];
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+  }, [open]);
+
+  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   return (
-    <header className={`site-header ${isScrolled ? "scrolled" : ""}`}>
-      {/* Brand Accent Bar */}
-      <div className="brand-accent-bar" />
-
-      {/* Top Contact Bar */}
-      <div className="top-bar">
-        <div className="container top-bar-container">
-          <div className="top-bar-left">
-            <span className="tagline">SAFE • RELIABLE • ON TIME EVERY TIME</span>
-          </div>
-          <div className="top-bar-right">
-            <a href="tel:+917050044409" className="contact-link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="icon">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              +91 7050044409
-            </a>
-            <span className="separator">|</span>
-            <a href="mailto:cargo23062026@gmail.com" className="contact-link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="icon">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              cargo23062026@gmail.com
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Navigation Bar */}
-      <div className="main-nav-bar">
-        <div className="container nav-container">
-          <Link href="/" className="logo-area">
-            <Image
-              src={logoIcon}
-              alt="Parshuram Express Logistics"
-              className="logo-icon-img"
-              priority
-            />
-            <div className="logo-text">
-              <span className="logo-brand">PARSHURAM</span>
-              <span className="logo-subbrand">EXPRESS LOGISTICS</span>
-            </div>
+    <>
+      <header className={`site-header ${scrolled ? "is-scrolled" : ""} ${open ? "is-open" : ""}`}>
+        <div className="container header-row">
+          <Link href="/" className="brand" aria-label={`${site.short} home`} onClick={() => setOpen(false)}>
+            <Image src={logoLight} alt="" priority />
+            <span className="brand-text">
+              <span className="brand-name">PARSHURAM</span>
+              <span className="brand-sub">EXPRESS LOGISTICS</span>
+            </span>
           </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="desktop-menu">
-            <ul>
-              {navLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                  <li key={link.href}>
-                    <Link href={link.href} className={isActive ? "active" : ""}>
-                      {link.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-            <Link href="/contact" className="btn btn-primary nav-cta-btn">
-              Get Quote
-            </Link>
+          <nav className="nav-desktop" aria-label="Main">
+            {navLinks.map((l) => (
+              <Link key={l.href} href={l.href} className={isActive(l.href) ? "is-active" : ""}>
+                {l.label}
+              </Link>
+            ))}
           </nav>
 
-          {/* Mobile Menu Toggle Button */}
+          <Link href="/contact#book" className="btn btn-brass header-cta">
+            Book a vehicle <Arrow />
+          </Link>
+
           <button
-            className="mobile-menu-toggle"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
+            type="button"
+            className="menu-toggle"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            onClick={() => setOpen((v) => !v)}
           >
-            <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
-            <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
-            <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
+            <span />
+            <span />
+            <span />
           </button>
         </div>
-      </div>
+      </header>
 
-      {/* Mobile Navigation Menu Drawer */}
-      <div className={`mobile-nav-drawer ${isMenuOpen ? "active" : ""}`}>
-        <nav className="mobile-menu">
-          <ul>
-            {navLinks.map((link) => {
-              const isActive = pathname === link.href;
-              return (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={isActive ? "active" : ""}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+      <nav id="mobile-nav" aria-label="Mobile" className={`nav-mobile ${open ? "is-open" : ""}`}>
+        {navLinks.map((l, i) => (
           <Link
-            href="/contact"
-            className="btn btn-primary mobile-cta-btn"
-            onClick={() => setIsMenuOpen(false)}
+            key={l.href}
+            href={l.href}
+            onClick={() => setOpen(false)}
+            className={`nav-mobile-link ${isActive(l.href) ? "is-active" : ""}`}
           >
-            Get Quote
+            <span>0{i + 1}</span>
+            {l.label}
           </Link>
-        </nav>
-      </div>
-    </header>
+        ))}
+        <div className="nav-mobile-foot">
+          <span className="mono" style={{ color: "var(--brass)" }}>{site.motto}</span>
+          <span>{site.phoneDisplay}</span>
+          <span>{site.email}</span>
+        </div>
+      </nav>
+    </>
   );
 }
